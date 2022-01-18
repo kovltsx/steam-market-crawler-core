@@ -1,5 +1,5 @@
 /src/__pycache__/
-/src/app/__pycache__/
+__pycache__/
 /src/*.pyc
 /src/chromedriver
 /src/chromedriver.exe
