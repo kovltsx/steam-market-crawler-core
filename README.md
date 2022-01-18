@@ -5,8 +5,9 @@ Steam Market Bot (Core)
 Technologies
 ------------
 
-* __Python__	Programming Language	
+* __Python__	Programming Language
 * __Flask__ 	Webserver
+* __python-socketio__ Real-time communications
 * __Redis__ 	Message Broker
 * __Selenium__	Browser Automation
 * __Chromium__	Headless Browser
