@@ -1,0 +1,11 @@
+server {
+	listen 80;
+	server_name localhost;
+
+	access_log logs/localhost.access.log main;
+
+	location / {
+		include uwsgi_params;
+		uwsgi_pass unix:/home/$USER/steam-market-bot/src/steam_market_bot.sock
+	}
+}

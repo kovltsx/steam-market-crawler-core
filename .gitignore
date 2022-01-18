@@ -1,0 +1,11 @@
+/src/__pycache__/
+/src/app/__pycache__/
+/src/*.pyc
+/src/chromedriver
+/src/chromedriver.exe
+/src/chromium/
+/src/env/
+/src/*.ini
+/src/proxies.txt
+/src/userdata/
+

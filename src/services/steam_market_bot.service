@@ -1,0 +1,15 @@
+[Unit]
+
+Description=uWSGI instance to serve Steam Market Bot
+After=network.target
+
+[Service]
+
+User=$USER
+Group=www-data
+WorkingDirectory=/home/$USER/steam-market-bot/src
+Environment="PATH=/home/$USER/steam-market-bot/src/env/bin"
+ExecStart=/home/$USER/steam-market-bot/src/env/bin/uwsgi --ini settings.ini
+
+[Install]
+WantedBy=multi-user.target
