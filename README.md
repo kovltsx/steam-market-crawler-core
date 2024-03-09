@@ -2,27 +2,22 @@
 
 Steam Market Bot (Core)
 
-Technologies
-------------
+## Technologies
 
-* __Python__	Programming Language
-* __Flask__ 	Webserver
-* __python-socketio__ Real-time communications
-* __Redis__ 	Message Broker
-* __Selenium__	Browser Automation
-* __Chromium__	Headless Browser
+- **Python** Programming Language
+- **Flask** Webserver
+- **python-socketio** Real-time communications
+- **Redis** Message Broker
+- **Selenium** Browser Automation
+- **Chromium** Headless Browser
 
-
-Setup
------
+## Setup
 
 Download chromium and chromedriver v87.0.4280.88
-
 
 ##### Chromium for 64-bit Windows
 
 https://github.com/macchrome/winchrome/releases/download/v87.0.4280.88-r812852-Win64/ungoogled-chromium-87.0.4280.88-1_Win64.7z
-
 
 ##### Chromium and chromedriver for 64-bit Linux
 
@@ -30,11 +25,9 @@ https://github.com/macchrome/winchrome/releases/download/v87.0.4280.88-r812852-W
 sudo apt install chromium-browser
 ```
 
-
 ##### Chromedriver for both platforms
 
 https://chromedriver.storage.googleapis.com/index.html?path=87.0.4280.88/
-
 
 ### Create files at /src/ and add data
 
@@ -63,7 +56,6 @@ python run.py
 
 ###### Production
 
-
 Load uwsgi server application on boot with a Systemd unit file. Modify paths in /src/services/
 
 ```
@@ -82,9 +74,8 @@ sudo systemctl restart nginx
 sudo ufw allow 'Nginx Full'
 ```
 
-
 Visit on your browser:
 
 ```
-http://your_domain
+http://your_domain/
 ```
